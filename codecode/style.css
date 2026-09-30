@@ -1,0 +1,712 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffe4ef;
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: #3b2630;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.small {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ff4f87;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 35px;
+    line-height: 1.1;
+    margin: 15px 0;
+    color: #ff3f7f;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #765965;
+    margin-bottom: 25px;
+}
+
+.photo-box {
+    background: white;
+    padding: 10px;
+    border-radius: 25px;
+    transform: rotate(-2deg);
+    box-shadow: 0 10px 25px rgba(255, 80, 130, 0.2);
+    margin-bottom: 30px;
+}
+
+.photo-box img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
+}
+
+.card {
+    background: rgba(255,255,255,0.85);
+    padding: 28px 22px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(255, 70, 120, 0.15);
+    margin-bottom: 25px;
+}
+
+.card h2 {
+    color: #ff4081;
+    margin-bottom: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+button {
+    border: none;
+    background: #ff4081;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 50px;
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(255, 64, 129, 0.3);
+}
+
+button:hover {
+    transform: scale(1.08) rotate(-2deg);
+    background: #ff1767;
+}
+
+#secret {
+    margin-top: 20px;
+    font-weight: 700;
+    color: #ff4081;
+    min-height: 25px;
+}
+
+footer {
+    margin-top: 35px;
+    font-size: 11px;
+    color: #987681;
+}
+
+/* floating hearts */
+
+.hearts span {
+    position: fixed;
+    bottom: -50px;
+    font-size: 25px;
+    animation: float 6s linear infinite;
+    z-index: 1;
+}
+
+.hearts span:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.hearts span:nth-child(2) {
+    left: 30%;
+    animation-delay: 2s;
+}
+
+.hearts span:nth-child(3) {
+    left: 50%;
+    animation-delay: 4s;
+}
+
+.hearts span:nth-child(4) {
+    left: 70%;
+    animation-delay: 1s;
+}
+
+.hearts span:nth-child(5) {
+    left: 90%;
+    animation-delay: 3s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+    .next-button {
+    display: inline-block;
+    text-decoration: none;
+    background: #ff2870;
+    color: white;
+    padding: 16px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 15px;
+    box-shadow: 0 8px 20px rgba(255, 40, 112, 0.3);
+    transition: 0.3s;
+}
+
+.next-button:hover {
+    transform: scale(1.08);
+    background: #ff0f5f;
+}
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffd6e7, #fff0f6);
+    font-family: 'Poppins', sans-serif;
+    color: #3d2630;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 55px 0;
+}
+
+.small {
+    color: #ff4081;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+h1 {
+    color: #ff3d7f;
+    font-size: 34px;
+    line-height: 1.15;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #80616c;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.emoji,
+.big-heart {
+    font-size: 75px;
+    margin-bottom: 15px;
+    animation: bounce 1.5s infinite;
+}
+
+.card {
+    background: rgba(255,255,255,0.9);
+    border-radius: 28px;
+    padding: 28px 22px;
+    margin: 25px 0;
+    box-shadow: 0 15px 35px rgba(255, 70, 130, 0.15);
+}
+
+.card h2 {
+    color: #ff4081;
+    margin-bottom: 18px;
+    font-size: 21px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 14px;
+}
+
+.button,
+button {
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    background: #ff4081;
+    color: white;
+    padding: 15px 27px;
+    border-radius: 50px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(255, 64, 129, 0.3);
+    transition: 0.3s;
+}
+
+.button:hover,
+button:hover {
+    transform: scale(1.08);
+    background: #ff1767;
+}
+
+.photo-box {
+    background: white;
+    padding: 9px;
+    border-radius: 25px;
+    transform: rotate(-2deg);
+    margin: 25px 0;
+    box-shadow: 0 10px 25px rgba(255, 70, 130, 0.2);
+}
+
+.photo-box img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
+}
+
+.back {
+    color: #a06c7d;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer {
+    margin-top: 25px;
+    color: #a47786;
+    font-size: 11px;
+}
+
+#message {
+    color: #ff4081;
+    font-weight: 700;
+    margin-top: 20px;
+    animation: pop 0.4s ease;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes pop {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+* =========================
+   PAGE 5 - BLUE THEME
+========================= */
+
+.blue-page {
+    margin: 0;
+    min-height: 100vh;
+    background: #dceeff;
+    color: #173b5c;
+}
+
+.blue-background {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top left, #b9ddff, transparent 35%),
+        radial-gradient(circle at bottom right, #a8d4ff, transparent 35%),
+        #dceeff;
+    padding: 1px 0;
+}
+
+.blue-page .container {
+    max-width: 520px;
+}
+
+.blue-page .small {
+    color: #3679ad;
+}
+
+.blue-page h1 {
+    color: #245f91;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* FOTO POLAROID */
+
+.photo-polaroid {
+    background: white;
+    padding: 12px 12px 18px;
+    width: 85%;
+    max-width: 380px;
+    margin: 0 auto 30px;
+    border-radius: 5px;
+    box-shadow: 0 15px 35px rgba(37, 95, 145, 0.25);
+    transform: rotate(-2deg);
+}
+
+.photo-polaroid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-polaroid p {
+    margin: 12px 0 0;
+    color: #55728a;
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* KARTU PESAN */
+
+.blue-card {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(70, 130, 180, 0.15);
+    box-shadow: 0 15px 40px rgba(37, 95, 145, 0.15);
+    text-align: left;
+}
+
+.blue-card p {
+    color: #38566d;
+    line-height: 1.9;
+}
+
+.blue-card h2 {
+    color: #3979aa;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 25px;
+}
+
+.blue-card .signature {
+    text-align: right;
+    color: #66869e;
+    font-style: italic;
+    margin-top: 30px;
+}
+
+/* TOMBOL */
+
+.blue-page .next-button {
+    background: #347eb7;
+    box-shadow: 0 8px 20px rgba(52, 126, 183, 0.3);
+}
+
+.blue-page .next-button:hover {
+    background: #25689b;
+}/* =========================
+   PAGE 6 - FOTO FAVORIT
+========================= */
+
+.favorite-page {
+    position: relative;
+    min-height: 100vh;
+    padding: 30px 20px;
+    background: linear-gradient(
+        180deg,
+        #dff5ff 0%,
+        #b9e7fa 50%,
+        #e8f8ff 100%
+    );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Dekorasi bintang */
+.favorite-page::before {
+    content: "✦  ✧  ✦  ♡  ✧  ✦";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #315a8a;
+    font-size: 22px;
+    letter-spacing: 10px;
+    opacity: 0.7;
+}
+
+/* Judul */
+.favorite-page .page-head {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    color: #102d55;
+}
+
+.favorite-page .page-head h2 {
+    font-family: "Georgia", serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* Polaroid */
+.favorite-polaroid {
+    position: relative;
+    width: min(82vw, 360px);
+    padding: 12px 12px 55px;
+    background: #ffffff;
+    border-radius: 4px;
+
+    box-shadow:
+        0 12px 25px rgba(20, 60, 100, 0.25);
+
+    transform: rotate(-2deg);
+    transition: transform 0.4s ease;
+}
+
+/* Efek saat disentuh */
+.favorite-polaroid:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+/* Foto */
+.favorite-polaroid img {
+    display: block;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* Tulisan di bawah foto */
+.favorite-caption {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 14px;
+
+    text-align: center;
+    color: #17385f;
+
+    font-family: "Comic Sans MS", cursive;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Bunga biru */
+.blue-flower {
+    margin-top: 25px;
+    color: #2875b8;
+    font-size: 27px;
+    letter-spacing: 8px;
+
+    animation: flowerFloat 3s ease-in-out infinite;
+}
+
+@keyframes flowerFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+/* Tombol lanjut */
+.favorite-page .next-btn {
+    margin-top: 20px;
+
+    padding: 10px 24px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: #173d70;
+    color: white;
+
+    font-size: 14px;
+    cursor: pointer;
+
+    box-shadow: 0 5px 12px rgba(20, 50, 90, 0.25);
+
+    transition: 0.3s;
+}
+
+.favorite-page .next-btn:hover {
+    background: #245a98;
+    transform: translateY(-2px);
+}
+
+/* Tampilan HP kecil */
+@media (max-width: 480px) {
+
+    .favorite-page {
+        padding: 25px 15px;
+    }
+
+    .favorite-page .page-head h2 {
+        font-size: 21px;
+    }
+
+    .favorite-polaroid {
+        width: 85vw;
+        padding: 9px 9px 50px;
+    }
+
+    .favorite-polaroid img {
+        height: 390px;
+    }
+
+    .favorite-caption {
+        font-size: 13px;
+    }
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #06143d;
+}
+
+.closing-page {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, #06143d, #102b68);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.closing-stars {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    font-size: 25px;
+    letter-spacing: 20px;
+    opacity: 0.8;
+}
+
+.closing-content {
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+}
+
+.closing-small {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 25px;
+    opacity: 0.8;
+}
+
+.closing-content h1 {
+    font-size: 48px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.closing-content h2 {
+    font-size: 28px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.closing-message {
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 20px auto;
+    max-width: 450px;
+}
+
+.closing-heart {
+    font-size: 55px;
+    margin: 20px 0;
+}
+
+.closing-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.closing-btn {
+    display: inline-block;
+    padding: 14px 25px;
+
+    background: white;
+    color: #102b68;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+.closing-btn:hover {
+    transform: scale(1.05);
+    background: #dcecff;
+}
+
+@media (max-width: 600px) {
+
+    .closing-content h1 {
+        font-size: 36px;
+    }
+
+    .closing-content h2 {
+        font-size: 21px;
+    }
+
+    .closing-message {
+        font-size: 15px;
+    }
+
+}
